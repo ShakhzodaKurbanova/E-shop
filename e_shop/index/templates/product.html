@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>{{  product.pr_name }}</title>
+</head>
+<body>
+    <h1>{{ product.pr_name }}</h1>
+    <hr>
+Количество: {{ product.pr_count }}
+<br>
+Описание: {{ product.pr_des }}
+    <br>
+Цена: {{ product.pr_price }}
+    <br>
+Категория: <a href="/category/{{ product.pr_category.id }}">{{ product.pr_category }} </a>
+<br>
+<img src="">
+    <a href="/add-to-cart/{{ product.id }}">Добавить в корзину</a>
+</body>
+</html>
